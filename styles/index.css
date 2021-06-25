@@ -1,0 +1,723 @@
+/*Estilos para Mobile First hasta 599px*/
+/* Se calcula el ancho y alto total de todo el documento*/
+* {
+    box-sizing: border-box;
+}
+
+/*Estilos aplicados al cuerpo del documento*/
+body {
+    font-family: 'IBM Plex Mono', monospace, 'Sans-Serif';
+    font-size: 1.5rem; 
+    margin: 0;
+    padding: 0;
+}
+
+/*Agregue una Fuente*/
+@font-face {
+    font-family:fuenteCoca;
+    src: url(../images/Coca.ttf);
+}
+
+#welcome {
+    font-family: 'Montserrat Alternates', sans-serif;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(225deg, #f40009 0%, rgb(104, 43, 43) 100%);
+    font-size: 16px;
+}
+
+.cocaSpan {
+    font-family:fuenteCoca;
+    font-weight: normal;
+    font-size: 40px;
+    color: white;
+}
+
+.span2{
+    display: none;
+}
+
+/*Comienzo del header*/
+header {
+    font-size: 16px;
+    width: 100%;
+}
+
+/*Estilos aplicados al menú*/
+.navigation {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+/*Logo de la página*/
+.containerSVG {
+    margin-left: 5%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.logoBd {
+    width: 36px;
+    height: 36px;
+}
+
+/*Estilos para el menú hamburguesa*/
+#hamburgerCheck {
+    display: none;
+}
+
+.hamburgerImage {
+    padding: 20px;
+}
+
+#hamburgerCheck:checked + .hamburgerImage span {
+    display: none;
+}
+
+#hamburgerCheck:checked + .hamburgerImage:after {
+    content:'X';
+}
+
+#hamburgerCheck:checked ~ .menu {
+    display: block;
+}
+
+.spanIcon {
+    display: none;
+}
+
+.menu {
+    background: #f40009;
+    display: none;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+.menu a {
+    color:#FFFFFF;   
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #f40009;
+    text-decoration: line-through;
+}
+
+/*Estilos aplicados para los títulos de la primera, tercera y cuarta sección*/
+.title {
+    font-size: 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
+    margin: 0 5% 5% 5%;
+    line-height: 42px;
+}
+
+.intro{
+    margin-top: 10%;
+}
+
+p {
+    font-size: 14px;
+}
+
+.content {
+    margin: 5%;
+    line-height: 22px;
+}
+
+/*Estilos para los botónes de la primera y quinta sección*/
+.button {
+    font-family: 'IBM Plex Mono', monospace;
+    width: 90%;
+    height: 48px;
+    background-color: white;
+    color: #060A24;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 5% 0 5%;
+    text-decoration: none;
+}
+
+/*Aplicación de hover a ambos botones*/
+.button:hover {
+    background-image: linear-gradient(225deg, #e74147 0%, #e69292 100%);
+}
+
+.primerB {
+    background-image: linear-gradient(225deg, #e74147 0%, #e69292 100%);
+}
+
+/*Comienzo de la Segunda sección*/
+.episodes {
+    margin-top: 30px;
+}
+
+/*Estilos para la línea diagonal*/
+.gradient {
+    background-image: linear-gradient(225deg, #f40009 0%, #e0191f 100%);   
+    clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%); 
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 1350px;
+}
+
+/*Episodios de Spotify*/
+.episodesTitle {
+    margin: 0;
+    margin-bottom: 50px;
+    position: relative;
+    top: 30px;
+    font-size: 36px;
+    color: #FFFFFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
+    padding-top: 60px;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border: 0px;
+}
+
+/*Comienzo de la tercera sección*/
+/*Imagen superpuesta*/
+.info {
+    position: relative;
+    bottom: 120px;
+}
+
+.img{
+    display: block;
+    width:100%; 
+    height:100%;
+}
+
+/*Comienzo de la cuarta sección*/
+.interviews {
+    position: relative;
+    bottom: 40px;
+}
+
+.images {
+    line-height: 0;
+}
+
+/*Comienzo de la sexta sección*/
+.gradients {
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: 40px;
+    height: 350px;
+}
+
+.gradient2 {
+    background-image: linear-gradient(225deg, #f40009 0%, #e0191f 100%);
+}
+
+.news {
+    font-size: 32px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 110px;
+}
+
+/*Comienzo de la séptima sección*/
+/*Se encuentra el footer de la página*/
+.footer {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 30px;
+    line-height: 22px;
+}
+
+h6 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerIcons a {
+    color: #060A24;
+}
+
+.fa-arrow-circle-up {
+    color: #f40009;
+    font-size: 28px;
+}
+
+/*Diseño para el segundo HTML*/
+
+.fa-arrow-left{
+    font-size: 28px;
+    color: #f40009;
+    cursor: pointer;
+}
+
+.contacto {
+    margin-top: 3%;
+    margin-right: 4%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.contactoEnlace {
+    text-decoration: none;
+    color: black;
+}
+
+.gradient3 {
+    background-image: linear-gradient(225deg, #f40009 0%, rgb(104, 43, 43) 100%);
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+    height: auto;
+    padding-bottom: 20px;
+}
+
+/*Comienzo de la quinta sección*/
+.topics {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 32px;
+    color: white;
+    line-height: 42px;
+    font-weight: normal;
+    margin: 40px 0 20px 60px;
+    padding-top: 120px;
+}
+
+/*Estilos aplicados a los iconos en bloques*/
+.icon {
+    display: block;
+    margin: auto;
+    margin-top: 37px;
+    padding: 0;
+}
+
+.lata1 {
+    width: 200px;
+    height: 206px;
+}
+
+.lata2 {
+    width: 86px;
+    height: 222px;
+}
+
+.lata3 {
+    width: 190px;
+    height: 210px;
+}
+
+.lata4 {
+    width: 180px;
+    height: 205px;
+}
+
+.lata5 {
+    width: 220px;
+    height: 212px;
+}
+
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: 13px;
+}
+
+.containerDiv {
+    background-image: url('../assets/fondoForm.jpg');
+    border: ridge;
+    margin: 100px 10px 100px 10px;
+}
+
+.title2 {
+    margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+.containerForm {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    align-self: center;
+    width: 300px;
+    line-height: 26px;
+    margin: 6px;
+    font-size: 18px;
+    border: ridge rgb(182, 171, 171) 2px;
+}
+
+.mensaje {
+    height: 160px;
+}
+
+.enviar {
+  margin-top: 12px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  font-size: 16px;
+  align-self: center;
+}
+
+/*Contenido de Media Queries para Desktop a partir de 600px*/
+
+@media (min-width: 600px) {
+
+.pagina {
+    display: none;
+}
+
+.cocaSpan {
+    display: inline-block;
+}
+
+.span2 {
+    display: inline-block;
+}
+
+.spanIcon {
+    display: flex;
+}
+
+.menu a {
+    padding: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconMenu {
+    padding-right: 20px;
+}
+
+/*Se quitan los saltos de líneas en el documento*/
+
+br {
+    display: none;
+}
+
+.intro {
+    margin-top: 40px;
+}
+
+.info {
+    display: flex;
+}
+
+.phoneImg {
+    width: 50%;
+}
+
+.parrafoSpan {
+    display: none;
+}
+
+.history {
+    color: white;
+}
+
+.infoText {
+    margin-top: 4.4%;
+}
+
+.parrafoHistoria {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.button {
+    width: 50%;
+}
+
+.gradient2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+
+
+
+
+
+/*Contenido de Media Queries para Desktop a partir de 1024px*/
+@media (min-width: 1024px) {
+
+    #welcome {
+        font-size: 24px;
+        height: 90px;
+    }
+
+    .pagina {
+        display: inline-block;
+    }
+
+    .cocaSpan {
+        font-size: 60px;
+    }
+
+    .span2{
+        display: inline-block;
+    }
+
+    .spanIcon {
+        display: none;
+    }
+
+    
+    header {
+        margin: 0;
+    }
+
+    .containerSVG {
+        margin-top: 4%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoBd {
+        width: 40px;
+        height: 40px;
+    }
+
+    /*Se quita el menú hamburguesa*/
+    .hamburgerImage {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        width: auto;
+        background: none;
+        margin-right: 5%;
+    }
+
+    .menu a {
+        color: #060A24;
+        padding: 0 0 0 20px;
+    }
+
+    /*Primera sección*/
+    .sectionTitle {
+        padding-top: 120px;
+        padding-left: 200px;
+        width: 830px;
+    }
+
+    .title {
+        margin: auto;
+        font-size: 44px;
+        color: black;
+    }
+
+    .intro {
+        font-size: 56px;
+        margin-bottom: 36px;
+    }
+
+    .point {
+        color: #f40009 ;
+    }
+
+
+    .content {
+        margin: auto;
+        font-size: 16px;
+    }
+
+    .button {
+        width: 226px;
+        height: 56px;
+        margin: 8% 5% 0 0; 
+    }
+
+    .gradient {
+        padding: 0;
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%); 
+        height: 1000px;
+    }
+
+    .episodesTitle {
+        font-size: 48px;
+        padding-top: 150px;
+        padding-left: 200px;
+    }
+
+    iframe {
+        display: inline-block;
+        width: 584px;
+        height: 232px;
+        margin-top: 1.5%;
+        margin-left: 4%;
+    }
+
+    /*Tercera sección*/
+    .info {
+        display: flex;
+    }
+
+    .infoText {
+        padding: 60px;
+    }
+
+    .parrafoSpan {
+        display: block;
+    }
+
+    .tamañoFotos {
+        display: contents;
+    }
+
+    .img {
+        width: 400px;
+        height: 640px;
+        margin-left: 15%;
+    }
+
+    /*Se cambian las imagenes en varias lineas*/
+    .images {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .images img {
+        margin: 0;
+        width: 33.3%;
+        height: 33.3%;
+        display:flex;
+        flex-wrap: wrap;
+    }    
+
+    .phoneImg {
+        margin: 0;
+    }
+    
+    /*Cuarta sección*/
+    .guests {
+        font-size: 44px;
+        margin-left: 14%;
+        margin-bottom: 2.5%;
+    }
+
+    /*Sexta sección*/
+    .gradient2 {
+        height: 470px;
+        clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+        margin-top: 40px;
+    }
+
+    .news {
+        padding-top: 150px;
+        font-size: 40px;
+    }
+
+    .listen {
+        margin: 40px auto;
+        width: 500px;
+        height: 56px;
+    }
+
+    /*Séptima sección, Footer*/
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer {
+    padding: 15px 60px;
+    }
+
+    h6 {
+        margin: auto 0;
+    }
+
+    .footerIcons a {
+        padding: 15px;
+    }
+    
+    /*Diseño para la segunda página de HTML*/
+
+    .fa-arrow-left{
+        font-size: 38px;
+    }
+
+    .gradient3 {
+        clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+        height: 1200px;
+    }
+
+    /*Quinta sección*/
+    .topics {
+        margin-left: 0;
+        margin-bottom: 2%;
+        font-size: 36px;
+        padding-top: 120px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .topicsIcons {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    /*Cambian los iconos a varias lineas*/
+    .iconSvg {
+        display: flex;
+        flex-wrap: wrap;
+        width: 225px;
+    }
+
+    h3 {
+        margin: auto;
+        height: 40px;
+        padding-top: 30px;
+        font-size: 30px;
+    }
+
+    .containerDiv {
+        width: 600px;
+        margin: 0;
+        margin-left: 350px;
+    }
+
+    .enviar {
+        margin-bottom: 20px;
+    }
+
+}
