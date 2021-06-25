@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Cabecera del documento-->
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="short icon" href="images/coca-cola-logo-1-1.png">
+    <!--Nombre de la página-->
+    <title>Coca-Cola</title>
+    <!--Hoja de estilos CSS-->
+    <link rel="stylesheet" href="./styles/index.css">
+    <!--Hoja de estilos Lightbox-->
+    <link rel="stylesheet" href="./styles/lightbox.css">
+    <!--Fonts Google-->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <!--Div que se visualiza al realizar el prompt-->
+    <div id="welcome">
+    </div>
+    <header>
+        <nav class="navigation">
+            <!--Logo de la página-->
+            <div class="containerSVG">
+                <img src="./images/coca-cola-logo-1-1.png" alt="LogoBD" class="logoBd" id="logo">
+            </div><!--Fin del logo-->
+            <!--Menú hamburguesa para Mobile First-->
+            <input type="checkbox" id="hamburgerCheck" />
+            <label for="hamburgerCheck" class="hamburgerImage"><span>&#9776;</span></label>
+            <ul class="menu">
+                <li><a href="#episodios">EPISODIOS
+                    <span class="spanIcon"><i class="fas fa-microphone-alt iconMenu"></i></span>
+                </a></li>
+                <li><a href="#nosotros">HISTORIA
+                    <span class="spanIcon"><i class="fas fa-book-open iconMenu"></i></span>
+                </a></li>
+                <li><a href="#entrevistas">IMAGENES
+                    <span class="spanIcon"><i class="far fa-images iconMenu"></i></span>
+                </a></li>
+                <li><a href="segundo.html">SABORES
+                    <span class="spanIcon"><i class="fas fa-wine-bottle iconMenu"></i></span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Primera sección-->
+    <section>
+        <div class="sectionTitle">
+            <h1 class="title intro"> El <del>sabor</del> <br>
+                de la vida<span class="point">.</span>
+            </h1>
+            <p class="content">
+                    Desde hace 133 años Coca-Cola está presente en el mundo.
+                    Desde entonces trabaja con la misma pasión y el compromiso
+                    en su misión de refrescar al mundo, inspirar momentos de optimismo
+                    y felicidad, crear valor y hacer una diferencia positiva en la vida
+                    de las personas, las comunidades y el entorno en el que se desarrolla.
+            </p>
+            <a href="#nosotros" class="button primerB"><strong>CONOCÉ MÁS</strong></a>
+        </div> 
+    </section>
+    <!--Segunda sección donde se encuentran los episodios de Spotify-->
+    <section>
+        <div class="episodes">
+            <div class="gradient">
+                <h2 class="episodesTitle" id="episodios">Episodios
+                </h2>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/6Op5YUFZHnTebDOgz4WKmt" 
+                    allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/4EWM3KRVInDib3brzJs6qt" 
+                    allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/0QZ4EUsxw3tl7S0gSPffyT" 
+                    allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/6Rp09XpgTOqXZxZYxJ3Aww" 
+                    allow="encrypted-media"></iframe>
+            </div>
+        </div>
+    </section>
+    <!--Tercera sección donde se encuentra la historia de la Coca-Cola-->
+    <section>
+        <div class="info">
+            <img src="./images/phone.png" alt="Phone" class="img phoneImg" id="nosotros">
+            <div class="infoText">
+                <h2 class="title history">Historia</h2>
+                <div class="content">
+                    
+                    <p class="parrafoHistoria"> El 8 de mayo de 1886, en la farmacia Jacobs, en Atlanta,<br>
+                        el farmacéutico John Pemberton comenzó la comercialización de un jarabe<br>
+                        ideado para combatir los problemas de digestión <br>
+                        que además aportase energía. <br>
+                        Durante los primeros tiempos, vendía cada día alrededor de nueve vasos, <br>
+                        a un precio de 5 centavos por vaso.
+                    </p>
+                    <span class="parrafoSpan"><p class="parrafoHistoria">
+                        Pemberton se dió cuenta de que la bebida que había creado podía ser un éxito.<br>
+                        Fue Frank Robinson, quien ideó la marca Coca-Cola y diseñó el logotipo.<br>
+                        En 1891 se fundó The Coca-Cola Company, formada por el farmacéutico Asa Candler,<br>
+                        su hermano John S. Candler y Frank Robinson. <br>
+                        Dos años después registraron la marca en la Oficina de Registro de la Propiedad Industrial <br>
+                        de los Estados Unidos.
+                    </p></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Cuarta sección donde se encuentran las imágenes-->
+    <section>
+        <div class="interviews">
+            <h2 class="title guests" id="entrevistas">Imágenes
+            </h2>
+            <div class="images">
+                <a href="./images/imagen_1.jpg" class="tamañoFotos" data-lightbox="imagenes" data-title="Embotelladora de Coca-Cola."><img src="./images/imagen_1.jpg" alt="Imagen_Coca-Cola" class="img"></a>
+                <a href="./images/imagen_2.jpg" class="tamañoFotos" data-lightbox="imagenes" data-title="Embotelladora de Coca-Cola."><img src="./images/imagen_2.jpg" alt="Imagen_Coca-Cola" class="img"></a>
+                <a href="./images/imagen_3.jpg" class="tamañoFotos" data-lightbox="imagenes" data-title="Camión repartidor de Coca-Cola."><img src="./images/imagen_3.jpg" alt="Imagen_Coca-Cola" class="img"></a>
+                <a href="./images/imagen_4.jpg" class="tamañoFotos" data-lightbox="imagenes" data-title="Camión repartidor de Coca-Cola."><img src="./images/imagen_4.jpg" alt="Imagen_Coca-Cola" class="img"></a>
+                <a href="./images/imagen_5.png" class="tamañoFotos" data-lightbox="imagenes" data-title="Puesto de venta de Coca-Cola."><img src="./images/imagen_5.png" alt="Imagen_Coca-Cola" class="img"></a>
+                <a href="./images/imagen_6.jpg" class="tamañoFotos" data-lightbox="imagenes" data-title="Puesto de venta de Coca-Cola."><img src="./images/imagen_6.jpg" alt="Imagen_Coca-Cola" class="img"></a>
+            </div>
+        </div>
+    </section>   
+    <!--Quinta sección donde se encuentran las novedades-->
+    <section>
+        <div class="gradients gradient2">
+            <h2 class="news">¿Querés contactarnos?</h2>
+            <a href="segundo.html" class="button listen"><strong>ENTRÁ ACÁ</strong></a>
+        </div>
+    </section>
+    <!--Sexta sección donde se encuentra el footer-->
+    <section>
+        <div class="footer">
+            <footer>
+                <h6>© 2020— The Coca-Cola Company<br></h6>
+                <div class="footerIcons">
+                    <a href="https://open.spotify.com/user/coca-cola"><i class="fab fa-spotify"></i></a>
+                    <a href="https://www.instagram.com/cocacola"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/cocacola"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/cocacolaar"><i class="fab fa-facebook icons-right"></i></a>
+                    <a href="https://telegram.me/CocaCola"><i class="fab fa-telegram"></i></a>
+                    <a href="#logo"><i class="fas fa-arrow-circle-up"></i></a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="./js/funcionalidad.js"></script>
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script src="./js/lightbox.js"></script>
+</body>
+
+</html>
